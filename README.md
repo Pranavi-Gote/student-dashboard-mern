@@ -66,19 +66,26 @@ npm run dev
 ```
 
 
-🔑 Environment Variables
-Create a .env file inside the server/ folder and add the following:
+## 🔑 Environment Variables
+
+Create a `.env` file inside the `server/` folder and add the following:
+
+```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string_here
 JWT_SECRET=your_super_secret_key
+```
 
-📡 API Endpoints
-Method | Endpoint            | Description
-POST   | /api/auth/register  | Register a new user
-POST   | /api/auth/login     | Login and get JWT Token
-GET    | /api/auth/profile   | Get current user details (Protected)
-GET    | /api/users/all      | Get all students (Pagination + Search)
-PUT    | /api/users/:id      | Update student details
-DELETE | /api/users/:id      | Delete a student
+## 📡 API Endpoints
+
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| **POST** | `/api/auth/register` | Register a new user |
+| **POST** | `/api/auth/login` | Login and get JWT Token |
+| **GET** | `/api/auth/profile` | Get current user details (Protected) |
+| **GET** | `/api/users/all` | Get all students (Pagination + Search) |
+| **PUT** | `/api/users/:id` | Update student details |
+| **DELETE** | `/api/users/:id` | Delete a student |
 
 Made with ❤️ by Pranavi Gote
+
